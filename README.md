@@ -124,7 +124,7 @@ The notebook is organised into 12 sections, each self-contained enough to be run
 | 9. Full-scene application | Predicts every pixel with all three models, produces error and disagreement maps |
 | 10. Three-window experiment | 2019 / 2020 / 2025 comparison, ERA5 weather check, ULEZ chi-squared test |
 | 11. Summary | Consolidated findings |
-| 12. Environmental cost | Aggregated energy and CO₂ footprint with field-survey comparison |
+| 12. Environmental cost | Energy and CO₂ footprint with field-survey comparison |
 
 For more details on the the different sections of the code please see the video below:
 
@@ -228,32 +228,32 @@ This project was completed for GEOL0069 (Artificial Intelligence for Earth Obser
 
 - Bauwens, M., Compernolle, S., Stavrakou, T., Müller, J.-F., van Gent, J., Eskes, H., Levelt, P.F., van der A, R., Veefkind, J.P., Vlietinck, J., Yu, H. and Zehner, C. (2020) 'Impact of coronavirus outbreak on NO₂ pollution assessed using TROPOMI and OMI observations', Geophysical Research Letters, 47(11), e2020GL087978. [https://doi.org/10.1029/2020GL087978][https://doi.org/10.1029/2020GL087978]
 
-- Beirle, S., Boersma, K.F., Platt, U., Lawrence, M.G. and Wagner, T. (2011) 'Megacity emissions and lifetimes of nitrogen oxides probed from space', Science, 333(6050), pp. 1737–1739. [https://doi.org/10.1126/science.1207824][https://doi.org/10.1126/science.1207824]
+- Beirle, S., Boersma, K.F., Platt, U., Lawrence, M.G. and Wagner, T. (2011) 'Megacity emissions and lifetimes of nitrogen oxides probed from space', Science, 333(6050), pp. 1737–1739. [https://doi.org/10.1126/science.1207824]
 
-- Belgiu, M. and Drăguţ, L. (2016) 'Random forest in remote sensing: a review of applications and future directions', ISPRS Journal of Photogrammetry and Remote Sensing, 114, pp. 24–31. [https://doi.org/10.1016/j.isprsjprs.2016.01.011][https://doi.org/10.1016/j.isprsjprs.2016.01.011]
+- Belgiu, M. and Drăguţ, L. (2016) 'Random forest in remote sensing: a review of applications and future directions', ISPRS Journal of Photogrammetry and Remote Sensing, 114, pp. 24–31. [https://doi.org/10.1016/j.isprsjprs.2016.01.011]
 
-- Cooper, M.J., Martin, R.V., Hammer, M.S., Levelt, P.F., Veefkind, P., Lamsal, L.N., Krotkov, N.A., Brook, J.R. and McLinden, C.A. (2022) 'Global fine-scale changes in ambient NO₂ during COVID-19 lockdowns', Nature, 601(7893), pp. 380–387. [https://doi.org/10.1038/s41586-021-04229-0][https://doi.org/10.1038/s41586-021-04229-0]
+- Cooper, M.J., Martin, R.V., Hammer, M.S., Levelt, P.F., Veefkind, P., Lamsal, L.N., Krotkov, N.A., Brook, J.R. and McLinden, C.A. (2022) 'Global fine-scale changes in ambient NO₂ during COVID-19 lockdowns', Nature, 601(7893), pp. 380–387. [https://doi.org/10.1038/s41586-021-04229-0]
 
-- Eskes, H., van Geffen, J., Boersma, F., Eichmann, K.-U., Apituley, A., Pedergnana, M., Sneep, M., Veefkind, J.P. and Loyola, D. (2023) Sentinel-5 Precursor / TROPOMI Level 2 Product User Manual: Nitrogen Dioxide. Document S5P-KNMI-L2-0021-MA. De Bilt: Royal Netherlands Meteorological Institute (KNMI). [https://doi.org/10.5194/gmd-16-509-2023][https://doi.org/10.5194/gmd-16-509-2023]
+- Eskes, H., van Geffen, J., Boersma, F., Eichmann, K.-U., Apituley, A., Pedergnana, M., Sneep, M., Veefkind, J.P. and Loyola, D. (2023) Sentinel-5 Precursor / TROPOMI Level 2 Product User Manual: Nitrogen Dioxide. Document S5P-KNMI-L2-0021-MA. De Bilt: Royal Netherlands Meteorological Institute (KNMI). [https://doi.org/10.5194/gmd-16-509-2023]
 
-- Goldberg, D.L., Anenberg, S.C., Griffin, D., McLinden, C.A., Lu, Z. and Streets, D.G. (2020) 'Disentangling the impact of the COVID-19 lockdowns on urban NO₂ from natural variability', Geophysical Research Letters, 47(17), e2020GL089269. [https://doi.org/10.1029/2020GL089269][https://doi.org/10.1029/2020GL089269]
+- Goldberg, D.L., Anenberg, S.C., Griffin, D., McLinden, C.A., Lu, Z. and Streets, D.G. (2020) 'Disentangling the impact of the COVID-19 lockdowns on urban NO₂ from natural variability', Geophysical Research Letters, 47(17), e2020GL089269. [https://doi.org/10.1029/2020GL089269]
 
-- Greater London Authority (2023) London-wide ULEZ expansion. Mayor of London policy briefing, August. London: Greater London Authority.Available at: [https://www.london.gov.uk/Ultra%20Low%20Emission%20Zone%20expands%20London-wide%20in%20a%20landmark%20moment%20for%20the%20capital][https://www.london.gov.uk/Ultra%20Low%20Emission%20Zone%20expands%20London-wide%20in%20a%20landmark%20moment%20for%20the%20capital]
+- Greater London Authority (2023) London-wide ULEZ expansion. Mayor of London policy briefing, August. London: Greater London Authority.Available at: [https://www.london.gov.uk/Ultra%20Low%20Emission%20Zone%20expands%20London-wide%20in%20a%20landmark%20moment%20for%20the%20capital]
 
-- Greater London Authority (2025) London Atmospheric Emissions Inventory (LAEI) 2019. London Datastore. Available at: [https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2019-e758q][https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2019-e758q]
+- Greater London Authority (2025) London Atmospheric Emissions Inventory (LAEI) 2019. London Datastore. Available at: [https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2019-e758q]
 
-- Jarvis, D.J., Adamkiewicz, G., Héroux, M.-E., Rapp, R. and Kelly, F.J. (2010) 'Nitrogen dioxide', in WHO Guidelines for Indoor Air Quality: Selected Pollutants. Geneva: World Health Organization. [https://www.ncbi.nlm.nih.gov/books/NBK138707/][https://www.ncbi.nlm.nih.gov/books/NBK138707/]
+- Jarvis, D.J., Adamkiewicz, G., Héroux, M.-E., Rapp, R. and Kelly, F.J. (2010) 'Nitrogen dioxide', in WHO Guidelines for Indoor Air Quality: Selected Pollutants. Geneva: World Health Organization. [https://www.ncbi.nlm.nih.gov/books/NBK138707/]
 
-- Liu, F., Page, A., Strode, S.A., Yoshida, Y., Choi, S., Zheng, B., Lamsal, L.N., Li, C., Krotkov, N.A., Eskes, H., van der A, R., Veefkind, P., Levelt, P.F., Hauser, O.P. and Joiner, J. (2021) 'Abrupt decline in tropospheric nitrogen dioxide over China after the outbreak of COVID-19', Science Advances, 6(28), eabc2992. [https://doi.org/10.1126/sciadv.abc2992][https://doi.org/10.1126/sciadv.abc2992]
+- Liu, F., Page, A., Strode, S.A., Yoshida, Y., Choi, S., Zheng, B., Lamsal, L.N., Li, C., Krotkov, N.A., Eskes, H., van der A, R., Veefkind, P., Levelt, P.F., Hauser, O.P. and Joiner, J. (2021) 'Abrupt decline in tropospheric nitrogen dioxide over China after the outbreak of COVID-19', Science Advances, 6(28), eabc2992. [https://doi.org/10.1126/sciadv.abc2992]
 
-- Lorente, A., Boersma, K.F., Eskes, H.J., Veefkind, J.P., van Geffen, J.H.G.M., de Zeeuw, M.B., Denier van der Gon, H.A.C., Beirle, S. and Krol, M.C. (2019) 'Quantification of nitrogen oxides emissions from build-up of pollution over Paris with TROPOMI', Scientific Reports, 9(1), 20033. [https://doi.org/10.1038/s41598-019-56428-5][https://doi.org/10.1038/s41598-019-56428-5]
+- Lorente, A., Boersma, K.F., Eskes, H.J., Veefkind, J.P., van Geffen, J.H.G.M., de Zeeuw, M.B., Denier van der Gon, H.A.C., Beirle, S. and Krol, M.C. (2019) 'Quantification of nitrogen oxides emissions from build-up of pollution over Paris with TROPOMI', Scientific Reports, 9(1), 20033. [https://doi.org/10.1038/s41598-019-56428-5]
 
-- Muñoz-Sabater, J., Dutra, E., Agustí-Panareda, A., Albergel, C., Arduini, G., Balsamo, G., Boussetta, S., Choulga, M., Harrigan, S., Hersbach, H., Martens, B., Miralles, D.G., Piles, M., Rodríguez-Fernández, N.J., Zsoter, E., Buontempo, C. and Thépaut, J.-N. (2021) 'ERA5-Land: a state-of-the-art global reanalysis dataset for land applications', Earth System Science Data, 13(9), pp. 4349–4383. [https://doi.org/10.5194/essd-13-4349-2021][https://doi.org/10.5194/essd-13-4349-2021]
+- Muñoz-Sabater, J., Dutra, E., Agustí-Panareda, A., Albergel, C., Arduini, G., Balsamo, G., Boussetta, S., Choulga, M., Harrigan, S., Hersbach, H., Martens, B., Miralles, D.G., Piles, M., Rodríguez-Fernández, N.J., Zsoter, E., Buontempo, C. and Thépaut, J.-N. (2021) 'ERA5-Land: a state-of-the-art global reanalysis dataset for land applications', Earth System Science Data, 13(9), pp. 4349–4383. [https://doi.org/10.5194/essd-13-4349-2021]
 
-- Robson, M. (2019) [London]. Licensed under CC BY-SA 3.0. Available at: [https://www.saferworld-global.org/resources/news-and-analysis/post/847-putting-peace-first-six-priorities-for-a-2019-uk-general-election] [https://www.saferworld-global.org/resources/news-and-analysis/post/847-putting-peace-first-six-priorities-for-a-2019-uk-general-election]
+- Robson, M. (2019) [London]. Licensed under CC BY-SA 3.0. Available at: [https://www.saferworld-global.org/resources/news-and-analysis/post/847-putting-peace-first-six-priorities-for-a-2019-uk-general-election]
 
-- van Geffen, J., Eskes, H., Compernolle, S., Pinardi, G., Verhoelst, T., Lambert, J.-C., Sneep, M., ter Linden, M., Ludewig, A., Boersma, K.F. and Veefkind, J.P. (2022) 'Sentinel-5P TROPOMI NO₂ retrieval: impact of version v2.2 improvements and comparisons with OMI and ground-based data', Atmospheric Measurement Techniques, 15(7), pp. 2037–2060. [https://doi.org/10.5194/amt-15-2037-2022][https://doi.org/10.5194/amt-15-2037-2022]
+- van Geffen, J., Eskes, H., Compernolle, S., Pinardi, G., Verhoelst, T., Lambert, J.-C., Sneep, M., ter Linden, M., Ludewig, A., Boersma, K.F. and Veefkind, J.P. (2022) 'Sentinel-5P TROPOMI NO₂ retrieval: impact of version v2.2 improvements and comparisons with OMI and ground-based data', Atmospheric Measurement Techniques, 15(7), pp. 2037–2060. [https://doi.org/10.5194/amt-15-2037-2022]
 
-- Veefkind, J.P., Aben, I., McMullan, K., Förster, H., de Vries, J., Otter, G., Claas, J., Eskes, H.J., de Haan, J.F., Kleipool, Q., van Weele, M., Hasekamp, O., Hoogeveen, R., Landgraf, J., Snel, R., Tol, P., Ingmann, P., Voors, R., Kruizinga, B., Vink, R., Visser, H. and Levelt, P.F. (2012) 'TROPOMI on the ESA Sentinel-5 Precursor: a GMES mission for global observations of the atmospheric composition for climate, air quality and ozone layer applications', Remote Sensing of Environment, 120, pp. 70–83. [https://doi.org/10.1016/j.rse.2011.09.027][https://doi.org/10.1016/j.rse.2011.09.027]
+- Veefkind, J.P., Aben, I., McMullan, K., Förster, H., de Vries, J., Otter, G., Claas, J., Eskes, H.J., de Haan, J.F., Kleipool, Q., van Weele, M., Hasekamp, O., Hoogeveen, R., Landgraf, J., Snel, R., Tol, P., Ingmann, P., Voors, R., Kruizinga, B., Vink, R., Visser, H. and Levelt, P.F. (2012) 'TROPOMI on the ESA Sentinel-5 Precursor: a GMES mission for global observations of the atmospheric composition for climate, air quality and ozone layer applications', Remote Sensing of Environment, 120, pp. 70–83. [https://doi.org/10.1016/j.rse.2011.09.027]
 
 [Back to top](#table-of-contents)
