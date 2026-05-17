@@ -147,7 +147,7 @@ For more details on the the different sections of the code please see the video 
 
 ![Methodology](Figures/Methodology.png)
 
-***Figure 7**. Machine learning workflow from the 11-band feature stack to classification maps: tercile labelling, 5×5 patch extraction, an 80/20 split, three classifiers (K-means unsupervised; Random Forest and CNN supervised) and evaluation on test patches.*
+***Figure 7**. Machine learning workflow from the 11-band feature stack to classification maps: tercile labelling, 5x5 patch extraction, an 80/20 split, three classifiers (K-means unsupervised; Random Forest and CNN supervised) and evaluation on test patches.*
 
 [Back to top](#table-of-contents)
 
