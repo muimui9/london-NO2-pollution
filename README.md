@@ -52,7 +52,7 @@ This design directly contrasts **supervised vs. unsupervised** learning, and (at
 
 ### Research question 2 - How has London's NO₂ pattern changed over time?
 
-The second part of the project reuses the trained models ** across three matched March–June windows: **2019** (pre-pandemic), **2020** (the UK's first national lockdown), and **2025** (post-pandemic, post-ULEZ-expansion). Aligning the windows to the same calendar dates controls for the strong seasonal cycle in NO₂ (Beirle et al., 2011), following standard practice in the COVID-NO₂ literature (Goldberg et al., 2020). The three comparisons isolate three distinct effects including the lockdown shock, the post-pandemic recovery and the longer-term influence of the August 2023 expansion of London's Ultra Low Emission Zone. The ERA5-Land reanalysis data (Muñoz-Sabater et al., 2021) provides a meteorological sanity check.
+The second part of the project reuses the trained models across three matched March–June windows: **2019** (pre-pandemic), **2020** (the UK's first national lockdown), and **2025** (post-pandemic, post-ULEZ-expansion). Aligning the windows to the same calendar dates controls for the strong seasonal cycle in NO₂ (Beirle et al., 2011), following standard practice in the COVID-NO₂ literature (Goldberg et al., 2020). The three comparisons isolate three distinct effects including the lockdown shock, the post-pandemic recovery and the longer-term influence of the August 2023 expansion of London's Ultra Low Emission Zone. The ERA5-Land reanalysis data (Muñoz-Sabater et al., 2021) provides a meteorological sanity check.
 
 ![Tercile change maps between matched March–June windows](figures/change_maps_three_windows.png)
 
