@@ -79,7 +79,7 @@ This matters for two reasons:
 
 ![Confusion_matrices](Figures/Confusion_matrices.png)
 
-***Figure 5**. Test-set confusion matrices for the three models: K-means (0.57), Random Forest (0.80) and CNN (0.93). Medium is the hardest class for all three; the supervised models keep their errors one class away, with no Low ↔ High confusion.*
+***Figure 5**. Test-set confusion matrices for the three models: K-means (0.573), Random Forest (0.803) and CNN (0.944). Medium is the hardest class for all three; the supervised models keep their errors one class away, with no Low ↔ High confusion.*
 
 [Back to top](#table-of-contents)
 
