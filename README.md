@@ -29,9 +29,9 @@ Nitrogen dioxide (NO₂) is a major urban air pollutant, produced predominantly 
 
 Satellite remote sensing offers spatially complete coverage. The TROPOMI instrument aboard **Sentinel-5P** retrieves tropospheric NO₂ column density at roughly 1 km resolution using differential optical absorption spectroscopy (Veefkind et al., 2012; van Geffen et al., 2022). It has been used extensively to map urban pollution and to quantify emission changes e.g. the sharp NO₂ reductions observed over European cities during the 2020 COVID-19 lockdowns (Bauwens et al., 2020; Barré et al., 2021). NO₂ retrievals are however limited by coarse spatial resolution and by sensitivity to meteorology, whereas optical sensors such as **Sentinel-2** capture surface morphology (vegetation, built-up area, water and bare ground) at far higher resolution. This project uses the two sensors together, treating Sentinel-2 surface features as predictors for the Sentinel-5P NO₂ class.
 
-![?](figures/?)
+![Sentinel](Figures/Sentinel.png)
 
-***Figure 2**.*
+***Figure 2**. Remote-sensing technique. (1) Two satellites observe Greater London: Sentinel-5P (TROPOMI) measures tropospheric NO₂ at coarse resolution, while Sentinel-2 (MSI) captures high-resolution optical surface reflectance. (2) Both products are co-registered and reprojected onto a shared 1 km grid (EPSG:4326), so every cell carries a co-located NO₂ value and matching surface-reflectance features. (3) For each grid cell, an 11-feature vector, five Sentinel-2 bands, four spectral indices and two locally-computed features is paired with an NO₂ pollution class (low/medium/high) and passed to the machine-learning models, which output a predicted pollution-class map for the whole scene.*
 
 ### Research question 1 - Can surface appearance predict pollution class?
 
@@ -145,9 +145,9 @@ For more details on the the different sections of the code please see the video 
 
 * **Multi-seed evaluation**: Section 8.5 retrains all three models with five different random seeds and reports mean ± standard deviation of test accuracy. Single-seed point estimates are noisy (CNN accuracy in particular can wobble by ±2 percentage points across initialisations). A headline gap of 1 percentage point between two models with that level of variance is not evidence one is better than the other. Across five seeds the spread is small (±0.001-0.002) relative to the inter-model gaps, so the K-means / RF / CNN ranking is not an artefact of a lucky initialisation.
 
-![?](figures/?)
+![Methodology](Figures/Methodology.png)
 
-***Figure 7**. Methodology*
+***Figure 7**. Machine learning workflow from the 11-band feature stack to classification maps: tercile labelling, 5×5 patch extraction, an 80/20 split, three classifiers (K-means unsupervised; Random Forest and CNN supervised) and evaluation on test patches.*
 
 [Back to top](#table-of-contents)
 
