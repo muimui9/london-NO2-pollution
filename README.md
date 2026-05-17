@@ -190,19 +190,19 @@ Two complementary mechanisms run throughout the notebook, both initialised in Se
 
 ![Environmental_cost](Figures/Environmental_cost.png)
 
-*Figure 10. energy figure*
+***Figure 9**. Environmental cost of the project. Left: per-phase carbon footprint logged by the in-notebook tracker, CNN training dominates at 75 g, far above the classical models and data handling. Right: the full pipeline (168 g CO₂) against an estimated equivalent ground-based field survey (1,500 kg CO₂), shown on a log scale, a reduction of roughly four orders of magnitude, driven almost entirely by the absence of vehicle travel.*
 
 The tracker assumes a baseline system power draw of 75 W scaled by measured CPU load, and converts energy to emissions with a configurable grid factor (0.5 kg CO₂eq/kWh by default, broadly representative of the UK grid). Both numbers are documented in the code so they can be adjusted for a different run environment.
 
 ### What the run costs
 
-A typical end-to-end run produces on the order of **50-100 g CO₂eq**, depending on hardware and grid intensity. The phase breakdown in Section 12 consistently shows that **CNN training dominates** the budget, with the GEE exports and the Section 10 three-window experiment as secondary contributors, and classical ML (K-means, Random Forest) and data I/O comparatively negligible. This is the expected profile for a deep-learning EO workflow and points to model training as the obvious target for any efficiency optimisation.
+A typical end-to-end run produces on the order of **168 g CO₂eq**, depending on hardware and grid intensity. The phase breakdown in Section 12 consistently shows that **CNN training dominates** the budget, with the GEE exports and the Section 10 three-window experiment as secondary contributors, and classical ML (K-means, Random Forest) and data I/O comparatively negligible. This is the expected profile for a deep-learning EO workflow and points to model training as the obvious target for any efficiency optimisation.
 
 ### Comparison with a field survey
 
-To put Figure 10 in context, Section 12 compares it against an equivalent ground-based monitoring campaign (the alternative for characterising NO₂ across an area this size). A field survey covering Greater London would involve vehicle travel between sites, instrument deploymen, and repeated visits; a conservative estimate places this three to four orders of magnitude above the notebook's footprint, driven almost entirely by transport emissions.
+To put Figure 9 in context, Section 12 compares it against an equivalent ground-based monitoring campaign (the alternative for characterising NO₂ across an area this size). A field survey covering Greater London would involve vehicle travel between sites, instrument deploymen, and repeated visits; a conservative estimate places this three to four orders of magnitude above the notebook's footprint, driven almost entirely by transport emissions.
 
-This notebook is therefore a **reduction of roughly 1,000-10,000x** vs field-based monitoring. The absolute CO₂eq figure (Figure 10) however is good only to within a factor of two (power-draw and grid-intensity assumptions are approximate), as satellite retrieval and ground monitoring measure are related but are not identical quantities.
+This notebook is therefore a **reduction of roughly 1,000x** vs field-based monitoring. The absolute CO₂eq figure (Figure 9) however is good only to within a factor of two (power-draw and grid-intensity assumptions are approximate), as satellite retrieval and ground monitoring measure are related but are not identical quantities.
 
 [Back to top](#table-of-contents)
 
