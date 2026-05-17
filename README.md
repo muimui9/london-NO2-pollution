@@ -187,7 +187,7 @@ The tracker is initiated in Section 1:
 
 - **A phase-level tracker**: a lightweight class that wraps each major stage (GEE export, data loading, K-means, Random Forest training, CNN training, full-scene prediction, and the Section 10 experiment) and logs wall time, CPU load, estimated power draw, and the resulting CO₂eq per phase. Showing where the compute budget is actually spent, not just the total.
 
-![Environmental_cost_session](Figures/Environmental_cost_session.png)
+![Environmental_cost](Figures/Environmental_cost.png)
 
 ***Figure 9**. Environmental cost of the project. Left: per-phase carbon footprint logged by the in-notebook tracker, CNN training dominates at 75 g, far above the classical models and data handling. Right: the full pipeline (168 g CO₂) against an estimated equivalent ground-based field survey (1,500 kg CO₂), shown on a log scale, a reduction of roughly four orders of magnitude, driven almost entirely by the absence of vehicle travel.*
 
