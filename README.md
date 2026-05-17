@@ -75,7 +75,7 @@ This matters for two reasons:
 3. Trains three classifiers: K-means (unsupervised), Random Forest (classical supervised), and CNN (deep supervised) on identical patch data and compares them with 5-fold cross-validation, hyperparameter ablation and multi-seed variance estimates.
 4. Applies all three models to the full London scene and produces error maps showing where each model fails geographically.
 5. Extends the pipeline to a three-window natural experiment (2019 / 2020 / 2025), tests model generalisation across periods and runs a spatial-block permutation test on whether pixels inside the pre-2023 ULEZ boundary were significantly more likely to be downgraded over the six-year window.
-6. Tracks the environmental cost of the whole run with `codecarbon` and a phase-level tracker, comparing the satellite-ML footprint to an equivalent field-survey baseline.
+6. Tracks the environmental cost of the whole run and a phase-level tracker, comparing the satellite-ML footprint to an equivalent field-survey baseline.
 
 ![Confusion_matrices](Figures/Confusion_matrices.png)
 
@@ -183,9 +183,8 @@ The notebook is instrumented to measure the environmental cost at Section 12.
 
 ### How it is tracked
 
-Two complementary mechanisms run throughout the notebook, both initialised in Section 1:
+The tracker is initiated in Section 1:
 
-- **`codecarbon`**: an open-source library that estimates energy use and CO₂eq emissions from CPU/GPU utilisation and the carbon intensity of the local electricity grid. It runs as a background process across the whole session.
 - **A phase-level tracker**: a lightweight class that wraps each major stage (GEE export, data loading, K-means, Random Forest training, CNN training, full-scene prediction, and the Section 10 experiment) and logs wall time, CPU load, estimated power draw, and the resulting CO₂eq per phase. Showing where the compute budget is actually spent, not just the total.
 
 ![Environmental_cost_session](Figures/Environmental_cost_session.png)
