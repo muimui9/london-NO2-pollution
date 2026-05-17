@@ -1,4 +1,4 @@
-![?](figures/?)
+![Banner_London](Figures/Banner_London.jpg) 
 
 # Classifying Urban NO₂ Pollution Zones over Greater London
 
