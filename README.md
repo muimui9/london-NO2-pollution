@@ -224,7 +224,7 @@ This project was completed for GEOL0069 (Artificial Intelligence for Earth Obser
 
 ## References
 
-- Barré, J., Petetin, H., Colette, A., Guevara, M., Peuch, V.-H., Rouïl, L., Engelen, R., Inness, A., Flemming, J., Pérez García-Pando, C., Bowdalo, D., Meleux, F., Geels, C., Christensen, J.H., Gauss, M., Benedictow, A., Tsyro, S., Friese, E., Struzewska, J., Kaminski, J.W., Douros, J., Timmermans, R., Robertson, L., Adani, M., Jorba, O., Joly, M. and Kouznetsov, R. (2021) 'Estimating lockdown-induced European NO₂ changes using satellite and surface observations and air quality models', Atmospheric Chemistry and Physics, 21(9), pp. 7373–7394. [https://doi.org/10.5194/acp-21-7373-2021][https://doi.org/10.5194/acp-21-7373-2021]
+- Barré, J., Petetin, H., Colette, A., Guevara, M., Peuch, V.-H., Rouïl, L., Engelen, R., Inness, A., Flemming, J., Pérez García-Pando, C., Bowdalo, D., Meleux, F., Geels, C., Christensen, J.H., Gauss, M., Benedictow, A., Tsyro, S., Friese, E., Struzewska, J., Kaminski, J.W., Douros, J., Timmermans, R., Robertson, L., Adani, M., Jorba, O., Joly, M. and Kouznetsov, R. (2021) 'Estimating lockdown-induced European NO₂ changes using satellite and surface observations and air quality models', Atmospheric Chemistry and Physics, 21(9), pp. 7373–7394. [https://doi.org/10.5194/acp-21-7373-2021]
 
 - Bauwens, M., Compernolle, S., Stavrakou, T., Müller, J.-F., van Gent, J., Eskes, H., Levelt, P.F., van der A, R., Veefkind, J.P., Vlietinck, J., Yu, H. and Zehner, C. (2020) 'Impact of coronavirus outbreak on NO₂ pollution assessed using TROPOMI and OMI observations', Geophysical Research Letters, 47(11), e2020GL087978. [https://doi.org/10.1029/2020GL087978][https://doi.org/10.1029/2020GL087978]
 
