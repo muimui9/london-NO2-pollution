@@ -26,7 +26,7 @@ Nitrogen dioxide (NO₂) is a major urban air pollutant, produced predominantly 
 
 ![?](figures/?)
 
-*Figure 1. Modelled road-traffic NOx emissions across Greater London (LAEI,2025; tonnes per 1×1 km grid cell). Emissions concentrate sharply along the major road network, the spatial pattern this project aims to recover from satellite imagery. Map produced in QGIS from London Atmospheric Emissions Inventory data (Greater London Authority, 2025).*
+***Figure 1**. Modelled road-traffic NOx emissions across Greater London (LAEI,2025; tonnes per 1×1 km grid cell). Emissions concentrate sharply along the major road network, the spatial pattern this project aims to recover from satellite imagery. Map produced in QGIS from London Atmospheric Emissions Inventory data (Greater London Authority, 2025).*
 
 Satellite remote sensing offers spatially complete coverage. The TROPOMI instrument aboard **Sentinel-5P** retrieves tropospheric NO₂ column density at roughly 1 km resolution using differential optical absorption spectroscopy (Veefkind et al., 2012; van Geffen et al., 2022). It has been used extensively to map urban pollution and to quantify emission changes e.g. the sharp NO₂ reductions observed over European cities during the 2020 COVID-19 lockdowns (Bauwens et al., 2020; Barré et al., 2021). NO₂ retrievals are however limited by coarse spatial resolution and by sensitivity to meteorology, whereas optical sensors such as **Sentinel-2** capture surface morphology (vegetation, built-up area, water and bare ground) at far higher resolution. This project uses the two sensors together, treating Sentinel-2 surface features as predictors for the Sentinel-5P NO₂ class.
 
