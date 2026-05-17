@@ -23,7 +23,7 @@ A comparison of three machine learning approaches (K-means, Random Forest and CN
 
 Nitrogen dioxide (NO₂) is a major urban air pollutant, produced predominantly by road traffic and other combustion sources (Jarvis et al., 2010). Chronic exposure is linked to respiratory and cardiovascular disease, and NO₂ is a regulated pollutant under both UK and EU air-quality legislation. Conventional monitoring relies on a sparse network of ground stations, which provides accurate point measurements but cannot resolve the continuous spatial structure of pollution across a city.
 
-![Fig1_NOx_air_quality](Figures/Fig1_NOx_air_quality.png)
+![_NOx_air_quality](Figures/_NOx_air_quality.png)
 
 ***Figure 1**. Modelled road-traffic NOx emissions across Greater London (LAEI,2025; tonnes per 1×1 km grid cell). Emissions concentrate sharply along the major road network, the spatial pattern this project aims to recover from satellite imagery. Map produced in QGIS from London Atmospheric Emissions Inventory data (Greater London Authority, 2025).*
 
@@ -45,7 +45,7 @@ Three machine-learning approaches are compared on this identical task:
 
 This design directly contrasts **supervised vs. unsupervised** learning, and (at a 5x5 patch size) tests whether CNN's spatial inductive bias provides an advantage over a Random Forest for this task.
 
-![Sentinel-5P NO₂, NDVI and NDBI over Greater London](figures/raw_inputs.png)
+![Sentinel-5P NO₂, NDVI and NDBI over Greater London](Figures/Raw_inputs.png)
 
 *Figure. The data the project is built on. Left: Sentinel-5P tropospheric NO₂ (the prediction target), highest over inner London. Centre/right: two of the Sentinel-2 predictors, NDVI (vegetation) and NDBI (built-up area). The visible anti-correlation between vegetation and NO₂ is the signal the models exploit.*
 
@@ -53,7 +53,7 @@ This design directly contrasts **supervised vs. unsupervised** learning, and (at
 
 The second part of the project reuses the trained models across three matched March–June windows: **2019** (pre-pandemic), **2020** (the UK's first national lockdown), and **2025** (post-pandemic, post-ULEZ-expansion). Aligning the windows to the same calendar dates controls for the strong seasonal cycle in NO₂ (Beirle et al., 2011), following standard practice in the COVID-NO₂ literature (Goldberg et al., 2020). The three comparisons isolate three distinct effects including the lockdown shock, the post-pandemic recovery and the longer-term influence of the August 2023 expansion of London's Ultra Low Emission Zone. The ERA5-Land reanalysis data (Muñoz-Sabater et al., 2021) provides a meteorological sanity check.
 
-![Tercile change maps between matched March–June windows](figures/change_maps_three_windows.png)
+![Tercile change maps between matched March–June windows](Figures/Change_maps_three_windows.png)
 
 *Figure. Tercile change between matched windows: purple = pollution rank fell, pink = rose. The 2019 → 2020 lockdown shock and the 2020 → 2025 recovery are both visible and the six-year net panel shows a east-west split across London.*
 
@@ -77,7 +77,7 @@ This matters for two reasons:
 5. Extends the pipeline to a three-window natural experiment (2019 / 2020 / 2025), tests model generalisation across periods and runs a spatial-block permutation test on whether pixels inside the pre-2023 ULEZ boundary were significantly more likely to be downgraded over the six-year window.
 6. Tracks the environmental cost of the whole run with `codecarbon` and a phase-level tracker, comparing the satellite-ML footprint to an equivalent field-survey baseline.
 
-![Confusion matrices for the three classifiers](figures/confusion_matrices.png)
+![Confusion matrices for the three classifiers](Figures/Confusion_matrices.png)
 
 *Figure. Test-set confusion matrices for the three models: K-means (0.57), Random Forest (0.80) and CNN (0.93). Medium is the hardest class for all three; the supervised models keep their errors one class away, with no Low ↔ High confusion.*
 
@@ -135,7 +135,7 @@ For more details on the the different sections of the code please see the video 
 
 * **The task is spatial pattern recovery, not pollution forecasting**: Labels are derived from the same Sentinel-5P NO₂ field that the model is asked to predict (tercile bins of that field). This means the question is *how much of the NO₂ spatial pattern is encoded in surface morphology*, not *can we predict pollution from independent ground truth*. The accuracy ceiling is in principle below 100% because surface appearance does not carry all the relevant atmospheric information. This caveat is flagged explicitly at the top of Section 5 and propagates through every downstream interpretation.
 
-![Predicted NO₂ pollution class over Greater London](figures/classification_maps.png)
+![Predicted NO₂ pollution class over Greater London](Figures/Classification_maps.png)
 
 *Figure. All three models applied to the full London scene, against ground truth. K-means recovers only the broad core; Random Forest and CNN both reproduce the spatial pattern closely, with the CNN's output the smoothest and closest to truth.*
 
@@ -159,17 +159,13 @@ More detailed discussion can be found in Section 10.9 and 11 in the note book, t
 
 Surface appearance can indeed predict pollution class with supervised learning. K-means, with no labels, reaches only 0.57 accuracy, it recovers the low-pollution class but collapses medium and high together. Both supervised models do substantially better: Random Forest at 0.80 and the CNN at 0.93. The supervised models also keep their errors one class away, with no Low ↔ High confusion. The CNN's margin over the Random Forest is larger than the seed-to-seed variance, which means spatial context (the thing only the CNN can exploit at a 5x5 patch) carries a meaningful signal for this task. Feature importance points to the near-infrared and red bands, confirming that pollution is most predictable from how vegetated versus built-up the surface is.
 
-![?](figures/?)
+![Feature_importance](Figures/Feature_importance)
 
 *Figure. Bar chart*
 
 ### Research question 2 - how has London's NO₂ pattern changed?
 
 The three-window experiment recovers the expected lockdown drop in 2019 → 2020 confirming less NO₂ pollution during this time frame. The six year 2019 → 2025 comparison shows an uneven change where NO₂ fell substantially across western and central London, while eastern London saw little improvement or a slight increase. The decline is therefore geographically concentrated rather than city-wide. The most important methodological finding is that **the model ranking flips** as the CNN wins in 2023 but the Random Forest generalises better to every other year (0.65 vs 0.59 in 2019, 0.71 vs 0.68 in 2020, 0.70 vs 0.67 in 2025), because the CNN's extra capacity overfit to 2023-specific patterns. For year-on-year monitoring with a fixed model, the simpler Random Forest is the safer operational choice.
-
-![?](figures/?)
-
-*Figure. Large confusion matrix*
 
 ## Limitations
 
@@ -192,7 +188,7 @@ Two complementary mechanisms run throughout the notebook, both initialised in Se
 - **`codecarbon`**: an open-source library that estimates energy use and CO₂eq emissions from CPU/GPU utilisation and the carbon intensity of the local electricity grid. It runs as a background process across the whole session.
 - **A phase-level tracker**: a lightweight class that wraps each major stage (GEE export, data loading, K-means, Random Forest training, CNN training, full-scene prediction, and the Section 10 experiment) and logs wall time, CPU load, estimated power draw, and the resulting CO₂eq per phase. Showing where the compute budget is actually spent, not just the total.
 
-![?](figures/?)
+![Environmental_cost](Figures/Environmental_cost)
 
 *Figure 10. energy figure*
 
