@@ -12,7 +12,6 @@ A comparison of three machine learning approaches (K-means, Random Forest and CN
 - [Notebook structure](#notebook-structure)
 - [Methodology highlights](#methodology-highlights)
 - [Key findings](#key-findings)
-- [Limitations](#limitations)
 - [Environmental cost](#environmental-cost)
 - [Data sources](#data-sources)
 - [Acknowledgements](#acknowledgements)
