@@ -31,7 +31,7 @@ Satellite remote sensing offers spatially complete coverage. The TROPOMI instrum
 
 ![?](figures/?)
 
-*Figure.*
+***Figure 2**.*
 
 ### Research question 1 - Can surface appearance predict pollution class?
 
@@ -47,7 +47,7 @@ This design directly contrasts **supervised vs. unsupervised** learning, and (at
 
 ![Raw_inputs](Figures/Raw_inputs.png)
 
-*Figure. The data the project is built on. Left: Sentinel-5P tropospheric NO₂ (the prediction target), highest over inner London. Centre/right: two of the Sentinel-2 predictors, NDVI (vegetation) and NDBI (built-up area). The visible anti-correlation between vegetation and NO₂ is the signal the models exploit.*
+***Figure 3**. The data the project is built on. Left: Sentinel-5P tropospheric NO₂ (the prediction target), highest over inner London. Centre/right: two of the Sentinel-2 predictors, NDVI (vegetation) and NDBI (built-up area). The visible anti-correlation between vegetation and NO₂ is the signal the models exploit.*
 
 ### Research question 2 - How has London's NO₂ pattern changed over time?
 
@@ -55,7 +55,7 @@ The second part of the project reuses the trained models across three matched Ma
 
 ![Change_maps_three_windows](Figures/Change_maps_three_windows.png)
 
-*Figure. Tercile change between matched windows: purple = pollution rank fell, pink = rose. The 2019 → 2020 lockdown shock and the 2020 → 2025 recovery are both visible and the six-year net panel shows a east-west split across London.*
+***Figure 4**. Tercile change between matched windows: purple = pollution rank fell, pink = rose. The 2019 → 2020 lockdown shock and the 2020 → 2025 recovery are both visible and the six-year net panel shows a east-west split across London.*
 
 ### Why this matters
 
@@ -79,7 +79,7 @@ This matters for two reasons:
 
 ![Confusion_matrices](Figures/Confusion_matrices.png)
 
-*Figure. Test-set confusion matrices for the three models: K-means (0.57), Random Forest (0.80) and CNN (0.93). Medium is the hardest class for all three; the supervised models keep their errors one class away, with no Low ↔ High confusion.*
+***Figure 5**. Test-set confusion matrices for the three models: K-means (0.57), Random Forest (0.80) and CNN (0.93). Medium is the hardest class for all three; the supervised models keep their errors one class away, with no Low ↔ High confusion.*
 
 [Back to top](#table-of-contents)
 
@@ -137,7 +137,7 @@ For more details on the the different sections of the code please see the video 
 
 ![Classification_maps](Figures/Classification_maps.png)
 
-*Figure. All three models applied to the full London scene, against ground truth. K-means recovers only the broad core; Random Forest and CNN both reproduce the spatial pattern closely, with the CNN's output the smoothest and closest to truth.*
+***Figure 6**. All three models applied to the full London scene, against ground truth. K-means recovers only the broad core; Random Forest and CNN both reproduce the spatial pattern closely, with the CNN's output the smoothest and closest to truth.*
 
 * **Per-period tercile labelling for the three-window experiment**: In Section 10, each of the three windows (2019, 2020, 2025) is independently re-binned into its own terciles rather than applying 2023 boundaries to all three. This reframes the analysis around *spatial reorganisation* rather than absolute concentration, which preserves rank ordering and therefore preserves tercile boundaries from TROPOMI processor-version drift between 2019 (v1) and 2025 (v2). 
 
@@ -147,7 +147,7 @@ For more details on the the different sections of the code please see the video 
 
 ![?](figures/?)
 
-*Figure. Methodology*
+***Figure 7**. Methodology*
 
 [Back to top](#table-of-contents)
 
@@ -161,7 +161,7 @@ Surface appearance can indeed predict pollution class with supervised learning. 
 
 ![Feature_importance](Figures/Feature_importance.png)
 
-*Figure. Bar chart*
+***Figure 8**. Bar chart*
 
 ### Research question 2 - how has London's NO₂ pattern changed?
 
