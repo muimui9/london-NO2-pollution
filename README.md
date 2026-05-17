@@ -23,7 +23,7 @@ A comparison of three machine learning approaches (K-means, Random Forest and CN
 
 Nitrogen dioxide (NO₂) is a major urban air pollutant, produced predominantly by road traffic and other combustion sources (Jarvis et al., 2010). Chronic exposure is linked to respiratory and cardiovascular disease, and NO₂ is a regulated pollutant under both UK and EU air-quality legislation. Conventional monitoring relies on a sparse network of ground stations, which provides accurate point measurements but cannot resolve the continuous spatial structure of pollution across a city.
 
-![?](figures/?)
+![Fig1_NOx_air_quality](Figures/Fig1_NOx_air_quality.png)
 
 ***Figure 1**. Modelled road-traffic NOx emissions across Greater London (LAEI,2025; tonnes per 1×1 km grid cell). Emissions concentrate sharply along the major road network, the spatial pattern this project aims to recover from satellite imagery. Map produced in QGIS from London Atmospheric Emissions Inventory data (Greater London Authority, 2025).*
 
