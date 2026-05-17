@@ -25,7 +25,7 @@ Nitrogen dioxide (NO₂) is a major urban air pollutant, produced predominantly 
 
 ![NOx_air_quality](Figures/NOx_air_quality.png)
 
-***Figure 1**. Modelled road-traffic NOx emissions across Greater London (LAEI,2025; tonnes per 1×1 km grid cell). Emissions concentrate sharply along the major road network, the spatial pattern this project aims to recover from satellite imagery. Map produced in QGIS from London Atmospheric Emissions Inventory data (Greater London Authority, 2025).*
+***Figure 1**. Modelled road-traffic NOx emissions across Greater London (LAEI, 2025; tonnes per 1×1 km grid cell). Emissions concentrate sharply along the major road network, the spatial pattern this project aims to recover from satellite imagery. Map produced in QGIS from London Atmospheric Emissions Inventory data (Greater London Authority, 2025).*
 
 Satellite remote sensing offers spatially complete coverage. The TROPOMI instrument aboard **Sentinel-5P** retrieves tropospheric NO₂ column density at roughly 1 km resolution using differential optical absorption spectroscopy (Veefkind et al., 2012; van Geffen et al., 2022). It has been used extensively to map urban pollution and to quantify emission changes e.g. the sharp NO₂ reductions observed over European cities during the 2020 COVID-19 lockdowns (Bauwens et al., 2020; Barré et al., 2021). NO₂ retrievals are however limited by coarse spatial resolution and by sensitivity to meteorology, whereas optical sensors such as **Sentinel-2** capture surface morphology (vegetation, built-up area, water and bare ground) at far higher resolution. This project uses the two sensors together, treating Sentinel-2 surface features as predictors for the Sentinel-5P NO₂ class.
 
@@ -157,11 +157,11 @@ More detailed discussion can be found in Section 10.9 and 11 in the note book, t
 
 ### Research question 1 - can surface appearance predict pollution class?
 
-Surface appearance can indeed predict pollution class with supervised learning. K-means, with no labels, reaches only 0.57 accuracy, it recovers the low-pollution class but collapses medium and high together. Both supervised models do substantially better: Random Forest at 0.80 and the CNN at 0.93. The supervised models also keep their errors one class away, with no Low ↔ High confusion. The CNN's margin over the Random Forest is larger than the seed-to-seed variance, which means spatial context (the thing only the CNN can exploit at a 5x5 patch) carries a meaningful signal for this task. Feature importance points to the near-infrared and red bands, confirming that pollution is most predictable from how vegetated versus built-up the surface is.
+Surface appearance can indeed predict pollution class with supervised learning. K-means, with no labels, reaches only 0.57 accuracy, it recovers the low-pollution class but collapses medium and high together. Both supervised models do substantially better: Random Forest at 0.80 and the CNN at 0.93. The supervised models also keep their errors one class away, with no Low ↔ High confusion. The CNN's margin over the Random Forest is larger than the seed-to-seed variance, which means spatial context (the thing only the CNN can exploit at a 5x5 patch) carries a meaningful signal for this task. Feature importance is led by near-infrared reflectance (B8), which separates vegetated from built-up surfaces, with the engineered distance-to-centre feature also ranking highly, consistent with pollution following surface type and a roughly radial gradient from the city core.
 
 ![Feature_importance](Figures/Feature_importance.png)
 
-***Figure 8**. Bar chart*
+***Figure 8**. Random Forest feature importance, averaged over the 5×5 patch cells. Near-infrared reflectance (B8) is by far the strongest predictor of NO₂ class, NIR sharply separates vegetated from built-up surfaces. The Distance-to-centre feature also ranks highly, reflecting London's roughly radial pollution gradient, while the visible bands (red, green, blue) contribute least.*
 
 ### Research question 2 - how has London's NO₂ pattern changed?
 
@@ -233,7 +233,7 @@ This project was completed for GEOL0069 (Artificial Intelligence for Earth Obser
 
 - Goldberg, D.L., Anenberg, S.C., Griffin, D., McLinden, C.A., Lu, Z. and Streets, D.G. (2020) 'Disentangling the impact of the COVID-19 lockdowns on urban NO₂ from natural variability', Geophysical Research Letters, 47(17), e2020GL089269. [https://doi.org/10.1029/2020GL089269]
 
-- Greater London Authority (2023) London-wide ULEZ expansion. Mayor of London policy briefing, August. London: Greater London Authority.Available at: [https://www.london.gov.uk/Ultra%20Low%20Emission%20Zone%20expands%20London-wide%20in%20a%20landmark%20moment%20for%20the%20capital]
+- Greater London Authority (2023) London-wide ULEZ expansion. Mayor of London policy briefing, August. London: Greater London Authority. Available at: [https://www.london.gov.uk/Ultra%20Low%20Emission%20Zone%20expands%20London-wide%20in%20a%20landmark%20moment%20for%20the%20capital]
 
 - Greater London Authority (2025) London Atmospheric Emissions Inventory (LAEI) 2019. London Datastore. Available at: [https://data.london.gov.uk/dataset/london-atmospheric-emissions-inventory-laei-2019-e758q]
 
