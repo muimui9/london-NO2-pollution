@@ -1,0 +1,29 @@
+# Python dependencies for the NO2 classification project.
+#
+# The notebook was developed on Google Colab (Python 3.10+). Versions are
+# left unpinned because Colab manages them; for an exact-reproduction build,
+# run `pip freeze` in the Colab environment and pin from there.
+
+# Earth observation / geospatial
+earthengine-api
+rasterio
+
+# Numerical / data handling
+numpy
+pandas
+scipy
+
+# Machine learning
+scikit-learn
+tensorflow
+
+# Visualisation
+matplotlib
+seaborn
+folium
+cartopy
+geemap
+
+# System / environmental-cost tracking
+psutil
+codecarbon
