@@ -95,7 +95,7 @@ The notebook is designed to run end-to-end on Google Colab. All Sentinel-5P and 
 
 ### Running the notebook
 
-1. Open `notebook.ipynb` in Google Colab.
+1. Open `NO2_pollution_project.ipynb` in Google Colab.
 2. Run Section 1, this installs dependencies and authenticates Earth Engine. When prompted, paste your own GCP project ID into the `ee.Initialize(project=...)` call in Section 1.
 3. Run Section 3 to trigger the GEE export. This is the slow step (2-5 minutes); track progress at [code.earthengine.google.com](https://code.earthengine.google.com) under the Tasks tab.
 4. Once the export task completes, the GeoTIFF will appear in your Drive at `AI4EO_assignment_training/london_stack_2023.tif`.
