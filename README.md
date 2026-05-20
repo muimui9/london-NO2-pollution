@@ -127,7 +127,7 @@ The notebook is organised into 12 sections, each self-contained enough to be run
 
 For more details on the the different sections of the code please see the video below:
 
-[![Watch the video](https://youtu.be/_bFPcauN0C8.jpg)](https://youtu.be/_bFPcauN0C8)
+[![Watch the video](https://img.youtube.com/vi/T-D1KVIuvjA/maxresdefault.jpg)](https://youtu.be/_bFPcauN0C8)
 
 [Back to top](#table-of-contents)
 
